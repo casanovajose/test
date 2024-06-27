@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+section {
+  width: 60%;
+  min-width: 400px;
+  margin: auto;
+}
+
+nav {
+  margin: 50px 0;
+  padding: 15px;
+}
+
+
+li {
+  margin: 15px 0;
+}
+
+nav:focus-within {
+  outline: dashed #ffcc00 2px;  
+}
+
+a {
+  color: #0077cc; /* azul */
+  text-decoration: none; /* Sin subrayado por defecto */
+}
+
+a:link {
+  color: #0077cc; /* azul */
+}
+
+a:visited {
+  /* En modo incognito puede no funcionar correctamente*/
+  color: #551A8B; /* violeta oscuro */
+}
+
+/*
+  También puedría utilizar focus visible para diferenciar navegación con teclado y foco generado al clickear 
+*/
+
+a:focus, a:focus-visible {
+  color: #ff8800; /* naranja */
+  outline: 2px dashed #ff8800; /* borde naranja */
+}
+
+
+
+a:hover {
+  color: #0056a3; /* azul oscuro */
+  text-decoration: underline; /* subrayado al pasar el mouse */
+}
+
+a:active {
+  color: #ff0000; /* rojo */
+}
+
+
+/* agregar icono al enlace*/
+/* a {
+  background: url("img/icono_link.png") no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+} */
+
+/* imagen como cursor*/
+a {
+  /* url del icono, posicion  y un cursor por si no encuentra la imagen (fallback) */
+  /* Formatos válidos SVG y PNG de como máximo 128 x 128 px*/
+
+ /* cursor: url("img/lynch.png") 10 10, crosshair;  */
+}
